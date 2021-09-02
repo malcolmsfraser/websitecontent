@@ -1,5 +1,5 @@
 ---
-title: "Project Euler Problem 9"
+title: "Project Euler: Problem 9"
 author: Malcolm Smith Fraser
 date: 2021-09-02T05:09:31Z
 draft: true
@@ -42,7 +42,12 @@ def find_special(value=1000):
     else:
         print(f"There is no pythagorean triplet that sums to {value}.")
 ```
+```python
+find_special()
+>>>Special Triplet found! (200, 375, 425)
+```
 >My approach:
+
 The first part of this question is to come up with a way to generate pythagorean triplets. 
 I accomplished this my looping through all integers between 0 and 1000 for both `a` and `b`.
 `c` was then calculated following the given formula. To ensure a pythagorean triplet, for which all values are integers,
