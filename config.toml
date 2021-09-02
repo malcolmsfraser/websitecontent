@@ -11,7 +11,7 @@ theme = "hugo-casper3"
 [params]
   facebook = "https://facebook.com"
   github = "https://github.com/malcolmsfraser"
-  description = "Just a demo site for the Casper3 theme ported to Hugo"
+  description = "Duke MS in Data Science"
   mainSections = ["post"]
 
 [menu]
