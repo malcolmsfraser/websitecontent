@@ -16,7 +16,7 @@ theme = "hugo-casper3"
   header_image = "images/background.jpg"
   
   author = "Malcolm Smith Fraser"
-  authorAvatar = "images/profile.jpg"
+  author-profile-image = "images/profile.jpg"
   authorLocation = "Durham, NC"
   authorDescription = "Data Scientist, MS Candidate"
 
