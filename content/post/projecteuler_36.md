@@ -51,10 +51,10 @@ sum_palindromes()
 There are three parts to this question.
 
 The first is generating the binary value of the given base10 number without any leading zeros. 
-This is accomplished in the get_binary function that uses python's built in `bin` operator. 
+This is accomplished in the `get_binary` function which uses python's built in `bin` operator. 
 
 The second involves checking if the both the base10 number and its binary are both palindromes.
-This is rather trivial using basic string manipulations.
+This is rather trivial using basic string manipulations. See `check_palindrome`.
 
 Lastly, to reach the final answer we need to sum all the palindromes that exist for numbers less than 1 million.
-This can be accomplished with a loop through all such values.
+This can be accomplished with a loop through all such values. See `sum_palindromes`.

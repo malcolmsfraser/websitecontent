@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author:
+author: Malcolm Smith Fraser
 date: {{ .Date }}
 draft: true
 ---
