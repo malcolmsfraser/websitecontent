@@ -3,7 +3,7 @@ title: "Projecteuler_119"
 author: Malcolm Smith Fraser
 date: 2021-09-02T06:12:47Z
 category: 
-tags: ["euler","project","challenge"]
+tags: [["euler"],["project"],["challenge"]]
 series: "biostat823"
 draft: true
 ---
