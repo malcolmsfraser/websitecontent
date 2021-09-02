@@ -13,10 +13,10 @@ theme = "hugo-casper3"
   github = "https://github.com/malcolmsfraser"
   description = "Duke MS in Data Science"
   mainSections = ["post"]
-  header_image = "images/background.jpg"
+  cover = "images/background.jpg"
   
   author = "Malcolm Smith Fraser"
-  author-profile-image = "images/profile.jpg"
+  authorAvatar = "images/profile.jpg"
   authorLocation = "Durham, NC"
   authorDescription = "Data Scientist, MS Candidate"
 
