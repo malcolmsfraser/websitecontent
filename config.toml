@@ -1,0 +1,69 @@
+baseURL = "https://malcolmsfraser.github.io"
+title = "Malcolm Smith Fraser"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+theme = "hugo-casper3"
+
+[params]
+  facebook = "https://facebook.com"
+  github = "https://github.com/malcolmsfraser"
+  description = "Just a demo site for the Casper3 theme ported to Hugo"
+  mainSections = ["post"]
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "image-credit"
+    name = "Image Credit"
+    url = "/image-credit/"
+    weight = 20
+  [[menu.main]]
+    identifier = "github"
+    name = "My Github"
+    url = "https://github.com/malcolmsfraser"
+    weight = 30
+  [[menu.main]]
+    identifier = "author"
+    name = "Author Homepage"
+    url = "https://malcolmsfraser.github.io"
+    weight = 40
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
