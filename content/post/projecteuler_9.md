@@ -5,7 +5,7 @@ date: 2021-09-02T05:09:31Z
 draft: true
 ---
 
-**Problem 9 - Special Pythagorean triplet** (solved by 360,641 as od 8/25/2021)
+**Special Pythagorean triplet** (solved by 360,641 as of 8/25/2021)
 
 A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 
@@ -15,6 +15,7 @@ For example, $3^2 + 4^2 = 9 + 16 = 25 = 5^2$.
 There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 
+>My solution:
 ```python
 import math
 
@@ -30,8 +31,6 @@ def find_special(value=1000):
             break
 
         for b in range(1, value): # b can never be as large as "value" so this is where I cap the loop for convinience
-            if found == True:
-                break
 
             c = math.sqrt(a * a + b * b)
 
@@ -43,4 +42,10 @@ def find_special(value=1000):
     else:
         print(f"There is no pythagorean triplet that sums to {value}.")
 ```
+>My approach:
+The first part of this question is to come up with a way to generate pythagorean triplets. 
+I accomplished this my looping through all integers between 0 and 1000 for both `a` and `b`.
+`c` was then calculated following the given formula. To ensure a pythagorean triplet, for which all values are integers,
+I check to to make sure `c` is evenly divisible by 1.
 
+I then used this method for continuously generate new pythagorean triplets until the one that sums to the given value (in this case 1000) is found.
