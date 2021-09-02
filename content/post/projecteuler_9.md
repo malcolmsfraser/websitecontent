@@ -2,6 +2,9 @@
 title: "Project Euler: Problem 9"
 author: Malcolm Smith Fraser
 date: 2021-09-02T05:09:31Z
+category: 
+tags: ["euler","project","challenge"]
+series: "biostat823"
 draft: true
 ---
 

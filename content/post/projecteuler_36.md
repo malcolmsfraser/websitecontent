@@ -2,6 +2,9 @@
 title: "Project Euler: Problem 36"
 author: Malcolm Smith Fraser
 date: 2021-09-02T05:38:26Z
+category:
+tags: ["euler","project","challenge"]
+series: "biostat823"
 draft: true
 ---
 
