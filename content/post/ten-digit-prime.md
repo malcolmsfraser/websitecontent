@@ -51,7 +51,7 @@ def check_expansion(expansion, scale=1, prec=50):
         print("10 digit prime not found, increase the precision")
 ```
 ```python
-check_expansion()
+check_expansion(expansion=get_pi, scale=17)
 >>>8649375157 is the first 10 digit prime in the decimal expansion of 17*pi
 ```
 
@@ -101,7 +101,7 @@ def get_e(n):
 def test_check_expansion():
     e_prime_10 = 7427466391
     
-    assert int(check_expansion(expansion = get_e,prec=500)) == e_prime_10
+    assert int(check_expansion(expansion=get_e, prec=500)) == e_prime_10
     print("Test passed!")
 
 test_check_expansion()
