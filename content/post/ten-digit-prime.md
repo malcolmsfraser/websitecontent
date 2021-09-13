@@ -24,7 +24,7 @@ def check_prime(n):
     prime_flag = 0
 
     if n > 1:
-        for i in range(2, int(np.sqrt(n)) + 1):
+        for i in range(2, int(n**.5) + 1):
             if (n % i == 0):
                 prime_flag = 1
                 break
@@ -38,7 +38,7 @@ def check_prime(n):
 >My solution:
 ```python
 def check_expansion(prec=50):
-    """Check if 10 digit values in the decimal expansion of 17pi are prime"""
+    """Checks if 10 digit values in the decimal expansion of 17pi are prime"""
     seventeen_pi_expansion = str(17*get_pi(prec)).split(".")[1]
     length = len(seventeen_pi_expansion)
     for i in range(length-10):
