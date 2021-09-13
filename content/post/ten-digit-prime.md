@@ -37,21 +37,22 @@ def check_prime(n):
 ```
 >My solution:
 ```python
-def check_expansion(prec=50):
-    """Checks if 10 digit values in the decimal expansion of 17pi are prime"""
-    seventeen_pi_expansion = str(17*get_pi(prec)).split(".")[1]
-    length = len(seventeen_pi_expansion)
+def check_expansion(expansion, scale=1, prec=50):
+    """Check if 10 digit values in the decimal expansion of 17pi are prime"""
+    expan = str(scale*expansion(prec)).split(".")[1]
+    length = len(expan)
     for i in range(length-10):
-        window = seventeen_pi_expansion[i:i+10]
+        window = expan[i:i+10]
         if check_prime(int(window)):
-            print(f"{window} is the first 10 digit prime in the decimal expansion of 17pi")
+            print(f"{window} is the first 10 digit prime in the decimal expansion of {scale}*{expansion.__name__.split('_')[1]}")
+            return window
             break
     else:
         print("10 digit prime not found, increase the precision")
 ```
 ```python
 check_expansion()
->>>8649375157 is the first 10 digit prime in the decimal expansion of 17pi
+>>>8649375157 is the first 10 digit prime in the decimal expansion of 17*pi
 ```
 
 >My approach:
@@ -69,3 +70,40 @@ If any of these numbers is found to be a factor of n, then n is not prime.
 
 Creating the sliding window function is rather trivial using slicing since the decimal expansion of 17pi is already in string form.  
 The function converts a given 10 digit value to an integer and applies the prime checker.
+
+>Unit tests:
+```python
+def test_get_pi():
+    assert mp.pi == get_pi(10)
+    assert mp.pi == get_pi(100)
+    print("Test passed!")
+
+test_get_pi()
+>>>Test passed!
+```
+```python
+def test_check_prime():
+    assert check_prime(2) == True
+    assert check_prime(7) == True
+    assert check_prime(4) == False
+    assert check_prime(25) == False
+    print("Test passed!")
+
+test_check_prime()
+>>>Test passed!
+```python
+def get_e(n):
+    """Returns returns the first n digits of e"""
+    mp.dps = n
+    return mp.e
+    
+def test_check_expansion():
+    e_prime_10 = 7427466391
+    
+    assert int(check_expansion(expansion = get_e,prec=500)) == e_prime_10
+    print("Test passed!")
+
+test_check_expansion()
+>>>7427466391 is the first 10 digit prime in the decimal expansion of 1*e
+>>>Test passed!
+```
