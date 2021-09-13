@@ -49,6 +49,11 @@ def check_expansion(prec=50):
     else:
         print("10 digit prime not found, increase the precision")
 ```
+```python
+check_expansion()
+>>>8649375157 is the first 10 digit prime in the decimal expansion of 17pi
+```
+
 >My approach:
 
 There are three parts to answering this question.  
