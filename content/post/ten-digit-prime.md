@@ -91,6 +91,7 @@ def test_check_prime():
 
 test_check_prime()
 >>>Test passed!
+```
 ```python
 def get_e(n):
     """Returns returns the first n digits of e"""
