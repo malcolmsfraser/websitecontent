@@ -1,1 +1,1 @@
-feature_image = "images/header"
+feature_image = "images/header.jpg"
