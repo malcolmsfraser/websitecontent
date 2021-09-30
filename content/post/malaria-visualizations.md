@@ -8,6 +8,15 @@ draft: true
 plotly: true
 ---
 
+In this post I briefly explore the malaria data from https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-11-13.
+The visualizations are made usingn geopandas and plotly. Geopandas just as simple as standard pandas but also allows for easier handling of geographical data.
+Plotly was my choice for the interactive visualizations as they are one of the easiest to export and embed with the help of the .to_html() function that all plotly figures have.
+
+This first visualization shows the distribution of malaria deaths in countries broken down by the quantiles of malaria deaths. 
+Group 0 (Quantiles=0), includes the bottom two quantiles (0-50%) as the both top and bounds were shared. These bar plots tell us that the data is very skewed.
+Countries with below global median ammonts of malaria deaths actually have essentially no malaria dealth at all, while countries in the top quartile (Quantiles=2) of median deaths contribute to the vast majority of malaria deaths seen globally.
+Countries with malaria deaths in the 3rd quartile (Quantiles=1 -- 50-75%) account for some malaria deaths, but still significantly less than the top group.
+
 {{< rawhtml >}}
 <div>
         
@@ -31,6 +40,8 @@ plotly: true
 </div>
 {{< /rawhtml >}}
 
+If we break down the malaria deaths by age group, we can see that the driving demographic is children under the age of 5. 
+Deaths for all demographics, but especially those children under 5 increased from 1990 until peaking around 2003.
 {{< rawhtml >}}
 <div>
         
@@ -54,6 +65,8 @@ plotly: true
 </div>
 {{< /rawhtml >}}
 
+Looking more closely at the malaria deaths in the peak year of 2003, we can see that malaria deaths we heavily concentrated in sub-saharan Africa,
+with some additional hotspots in south Asia and the pacific islands.
 {{< rawhtml >}}
     <div>
         
