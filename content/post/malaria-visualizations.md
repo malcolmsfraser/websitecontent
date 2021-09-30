@@ -9,3 +9,5 @@ plotly: true
 ---
 
 {{< plotly json="deaths_by_age_all_years.json" height="700">}} 
+
+![alt](/images/average_deaths_by_quantiles.png)
