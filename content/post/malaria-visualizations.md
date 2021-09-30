@@ -59,7 +59,7 @@ plotly: true
         
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
-            <div id="ba2263cd-1558-4fc6-a59b-b79764f059f1" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+            <div id="ba2263cd-1558-4fc6-a59b-b79764f059f1" class="plotly-graph-div" style="height:300%; width:300%;"></div>
             <script type="text/javascript">
                 
                     window.PLOTLYENV=window.PLOTLYENV || {};
