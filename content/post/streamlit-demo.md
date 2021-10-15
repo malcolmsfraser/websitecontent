@@ -14,11 +14,11 @@ Streamlit is one of most popular python webapp and dashboarding tools out there 
 It links connects almost seamlessly with many of the visualization tools in the 
 Python DS ecosystem, and has tons of options for customization.
 
-![Example image](/static/streamlit-demo-fulldashboard.png)
+![Example image](/static/images/streamlit-demo-fulldashboard.png)
 
 Let's get started!
 
-**Part 1: Analyze the data**
+## **Part 1: Analyze the data**
 Before moving to Streamlit, I started in a Jupyter notebook to explore the data, 
 find some interesting visualizations and overall just get a feel for the data - 
 both content and structure. 
@@ -74,7 +74,7 @@ data_split = {
 
 Now that the data is split reformatted it looks like this
 
-![Example image](/static/streamlit-demo-dataframe1.png)
+![Example image](/static/images/streamlit-demo-dataframe1.png)
 
 Next I tried to understand how I could visualize the data. To keep things simple,
 I looked at some barplots I created with plotly express.
@@ -109,7 +109,7 @@ graph = px.bar(
 
 Now that I have my data formatted and have the plots I want, I can start building the dashboard.
 
-**Part 2: Build the dashboard**
+## **Part 2: Build the dashboard**
 
 The idea for the dashboard is to have a sidebar where the user can select the
 gender of the data they want to visualize as well as the variable they want to 
@@ -141,7 +141,7 @@ post_grad_employment_type = full_data_clean.iloc[:,0:1].columns.append(full_data
 
 Alright, now that that's out of the way lets get building.
 
-*Building the sidebar*
+### *Building the sidebar*
 
 Create a new python file named dashboard.py and import your packeges.
 ```{python}
@@ -180,9 +180,11 @@ select_variable = st.sidebar.radio("Variable", select_data.drop("Field",axis=1).
 ```
 
 Now if you run `streamlit run dashboard.py` you should get something like this.
-![Example image](/static/streamlit-demo-sidebar1.png)
+![Example image](/static/images/streamlit-demo-sidebar1.png)
 
 We will get to the "compare" options later.
+
+### Dashboard Body
 
 In the body of our dashboard we add the option to view the raw data.
 ```{python}
@@ -245,7 +247,7 @@ inside the same "Hide Graph" if statement.
 ```
 
 The resulting dashboard should look something like this
-![Example image](/static/streamlit-demo-fulldashboard.png)
+![Example image](/static/images/streamlit-demo-fulldashboard.png)
 
 
 I hope you found this walkthrough useful! 
