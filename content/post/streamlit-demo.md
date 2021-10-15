@@ -14,7 +14,7 @@ Streamlit is one of most popular python webapp and dashboarding tools out there 
 It links connects almost seamlessly with many of the visualization tools in the 
 Python DS ecosystem, and has tons of options for customization.
 
-![Example image](/static/images/streamlit-demo-fulldashboard.png)
+![Example image](/images/streamlit-demo-fulldashboard.png)
 
 Let's get started!
 
@@ -74,7 +74,7 @@ data_split = {
 
 Now that the data is split reformatted it looks like this
 
-![Example image](/static/images/streamlit-demo-dataframe1.png)
+![Example image](/images/streamlit-demo-dataframe1.png)
 
 Next I tried to understand how I could visualize the data. To keep things simple,
 I looked at some barplots I created with plotly express.
@@ -180,7 +180,7 @@ select_variable = st.sidebar.radio("Variable", select_data.drop("Field",axis=1).
 ```
 
 Now if you run `streamlit run dashboard.py` you should get something like this.
-![Example image](/static/images/streamlit-demo-sidebar1.png)
+![Example image](/images/streamlit-demo-sidebar1.png)
 
 We will get to the "compare" options later.
 
@@ -247,7 +247,7 @@ inside the same "Hide Graph" if statement.
 ```
 
 The resulting dashboard should look something like this
-![Example image](/static/images/streamlit-demo-fulldashboard.png)
+![Example image](/images/streamlit-demo-fulldashboard.png)
 
 
 I hope you found this walkthrough useful! 
