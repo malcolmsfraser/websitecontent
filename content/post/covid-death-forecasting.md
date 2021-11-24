@@ -48,5 +48,5 @@ the last five weeks held out to evaluate the efficacy of the forcasting.
 The dataset was made stationary with the use of first order or second order differencing, 
 and a threshold of .5 was used to determine high vs. low correlation. 
 
-The a Jupyter source code for this project can be found on our github repo.
-https://github.com/jenniesun/covid_forcasting
+A notebook with our the project source code can be found on our github repo.
+https://github.com/jenniesun/covid_forcasting.
